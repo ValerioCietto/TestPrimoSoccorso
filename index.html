@@ -58,13 +58,26 @@
   <script>
     let quizData = null;
 
-    // Function to generate the quiz from loaded JSON data
+    // Fisher-Yates shuffle algorithm
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    // Function to generate the quiz from loaded JSON data, selecting 10 random questions
     function generateQuiz(data) {
-      quizData = data;
+      // Shuffle and select 10 questions randomly
+      const allQuestions = data.questions.slice();
+      const selectedQuestions = shuffle(allQuestions).slice(0, 10);
+      quizData = selectedQuestions;
+
       const quizContainer = document.getElementById("quiz-container");
       quizContainer.innerHTML = ""; // Clear loading message
 
-      data.questions.forEach((question, index) => {
+      selectedQuestions.forEach((question, index) => {
         // Create question container
         const questionDiv = document.createElement("div");
         questionDiv.className = "question";
@@ -94,20 +107,20 @@
     // Function to evaluate the quiz
     function evaluateQuiz() {
       let score = 0;
-      quizData.questions.forEach((question, index) => {
+      quizData.forEach((question, index) => {
         const selected = document.querySelector(`input[name="question${index}"]:checked`);
         if (selected && selected.value === question.correct_answer) {
           score++;
         }
       });
       const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = `<h2>Your Score: ${score} / ${quizData.questions.length}</h2>`;
+      resultDiv.innerHTML = `<h2>Your Score: ${score} / ${quizData.length}</h2>`;
     }
 
     // Event listener for submit button
     document.getElementById("submit-btn").addEventListener("click", evaluateQuiz);
 
-    // Load quiz questions from /domande.json on page load
+    // Load quiz questions from /TestPrimoSoccorso/domande.json on page load
     window.onload = function() {
       fetch('/TestPrimoSoccorso/domande.json')
         .then(response => {
