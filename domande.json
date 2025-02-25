@@ -1,7 +1,7 @@
 {
     "questions": [
       {
-        "text": "Qual è la prima priorità in una situazione di emergenza secondo gli appunti?",
+        "text": "Qual è la prima priorità in una situazione di emergenza?",
         "correct_answer": "C",
         "answers": [
           { "option": "A", "value": "Soccorrere la vittima" },
@@ -61,7 +61,7 @@
         ]
       },
       {
-        "text": "Se è presente un grado elevato di ustione, cosa implica secondo gli appunti?",
+        "text": "Se è presente un grado elevato di ustione, cosa implica?",
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Solo il danno del grado superiore" },
@@ -351,7 +351,7 @@
         ]
       },
       {
-        "text": "Cosa è fondamentale fare in caso di arresto cardiaco secondo gli appunti?",
+        "text": "Cosa è fondamentale fare in caso di arresto cardiaco?",
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Abbandonare la vittima per cercare aiuto" },
@@ -391,7 +391,7 @@
         ]
       },
       {
-        "text": "Quale disinfettante è raccomandato per trattare ferite secondo gli appunti?",
+        "text": "Quale disinfettante è raccomandato per trattare ferite?",
         "correct_answer": "C",
         "answers": [
           { "option": "A", "value": "Alcool isopropilico" },
@@ -491,7 +491,7 @@
         ]
       },
       {
-        "text": "Secondo gli appunti, l’intervento del soccorritore è legalmente protetto se:",
+        "text": "L’intervento del soccorritore è legalmente protetto se:",
         "correct_answer": "A",
         "answers": [
           { "option": "A", "value": "Si agisce in stato di necessità per evitare danni irreversibili" },
