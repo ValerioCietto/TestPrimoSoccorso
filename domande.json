@@ -6,7 +6,7 @@
         "answers": [
           { "option": "A", "value": "Soccorrere la vittima" },
           { "option": "B", "value": "Allertare i soccorsi" },
-          { "option": "C", "value": "Proteggere se stessi" },
+          { "option": "C", "value": "Proteggere sè stessi" },
           { "option": "D", "value": "Intervenire immediatamente" }
         ]
       },
@@ -14,18 +14,18 @@
         "text": "In ordine di priorità, quale tra queste azioni viene eseguita per ultima?",
         "correct_answer": "C",
         "answers": [
-          { "option": "A", "value": "Proteggere" },
+          { "option": "A", "value": "Proteggersi" },
           { "option": "B", "value": "Allertare" },
           { "option": "C", "value": "Soccorrere" },
-          { "option": "D", "value": "Mettere in sicurezza la scena" }
+          { "option": "D", "value": "Mettere in sicurezza la scena in modo che il pericolo non coinvolga ulteriori persone" }
         ]
       },
       {
-        "text": "Nel trattamento delle ustioni, quale procedura è fondamentale per proteggere il soccorritore?",
+        "text": "Nel trattamento delle ustioni, quale procedura è fondamentale applicare?",
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Rimuovere i vestiti immediatamente" },
-          { "option": "B", "value": "Utilizzare guanti e protezioni" },
+          { "option": "B", "value": "Abbassare la temperatura con acqua a temperatura ambiente" },
           { "option": "C", "value": "Applicare ghiaccio direttamente sulla pelle" },
           { "option": "D", "value": "Massaggiare la zona ustionata" }
         ]
@@ -57,7 +57,7 @@
           { "option": "A", "value": "Eritema superficiale" },
           { "option": "B", "value": "Bolle multiple dolorose" },
           { "option": "C", "value": "Carbonizzazione con distruzione dei nervi" },
-          { "option": "D", "value": "Rossore che si riprende da solo" }
+          { "option": "D", "value": "Rossore che guarisce da solo" }
         ]
       },
       {
@@ -65,7 +65,7 @@
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Solo il danno del grado superiore" },
-          { "option": "B", "value": "La presenza simultanea di tutti i gradi inferiori" },
+          { "option": "B", "value": "La presenza simultanea di tutti i gradi inferiori di ustione" },
           { "option": "C", "value": "Una guarigione più rapida" },
           { "option": "D", "value": "La necessità di rimuovere immediatamente i vestiti" }
         ]
@@ -74,10 +74,10 @@
         "text": "La gravità delle ustioni dipende da:",
         "correct_answer": "B",
         "answers": [
-          { "option": "A", "value": "Solamente dalla profondità" },
-          { "option": "B", "value": "Dall’estensione e dalla quantità di area interessata" },
-          { "option": "C", "value": "Solo dal tipo di sostanza che ha causato l’ustione" },
-          { "option": "D", "value": "Dalla temperatura del liquido" }
+          { "option": "A", "value": "Solamente dal grado di ustione (1°,2°,3°)" },
+          { "option": "B", "value": "Soprattutto dalla estensione aree colpite, meno dal grado" },
+          { "option": "C", "value": "Temperatura della fonte di calore che le ha causate" },
+          { "option": "D", "value": "Dal grado e in modo minore dalla estensione" }
         ]
       },
       {
@@ -111,13 +111,13 @@
         ]
       },
       {
-        "text": "Le ustioni possono risultare mortali anche dopo:",
+        "text": "Le ustioni gravi possono risultare mortali anche dopo:",
         "correct_answer": "C",
         "answers": [
-          { "option": "A", "value": "24 ore" },
-          { "option": "B", "value": "3 giorni" },
-          { "option": "C", "value": "6 mesi" },
-          { "option": "D", "value": "1 anno" }
+          { "option": "A", "value": "24 ore, per problemi cardiaci" },
+          { "option": "B", "value": "3 giorni, problemi renali" },
+          { "option": "C", "value": "6 mesi, per infezioni" },
+          { "option": "D", "value": "1 anno, per tumori" }
         ]
       },
       {
@@ -146,8 +146,8 @@
         "answers": [
           { "option": "A", "value": "Applicare subito ghiaccio secco" },
           { "option": "B", "value": "Lavare abbondantemente con acqua" },
-          { "option": "C", "value": "Rimuovere i vestiti contaminati e attendere il personale sanitario" },
-          { "option": "D", "value": "Applicare disinfettante direttamente sulla sostanza" }
+          { "option": "C", "value": "Leggere indicazioni sulla confezione e attendere il personale sanitario" },
+          { "option": "D", "value": "Applicare disinfettante direttamente sulla ferita" }
         ]
       },
       {
@@ -161,17 +161,17 @@
         ]
       },
       {
-        "text": "L’uso improprio di quale prodotto è sconsigliato per il trattamento delle ustioni da freddo?",
+        "text": "L’uso improprio di quale prodotto è sconsigliato per il trattamento di un raffreddamento?",
         "correct_answer": "B",
         "answers": [
-          { "option": "A", "value": "Azoto liquido" },
-          { "option": "B", "value": "Ghiaccio spray" },
-          { "option": "C", "value": "Ghiaccio secco su un vestito" },
-          { "option": "D", "value": "Applicazione di acqua fredda" }
+          { "option": "A", "value": "Coperte" },
+          { "option": "B", "value": "Alcolici" },
+          { "option": "C", "value": "Bevande calde" },
+          { "option": "D", "value": "Termometro" }
         ]
       },
       {
-        "text": "Il ghiaccio secco, nel trattamento delle ustioni da freddo, deve essere:",
+        "text": "Il ghiaccio secco, nel trattamento delle ustioni da caldo, deve essere:",
         "correct_answer": "C",
         "answers": [
           { "option": "A", "value": "Applicato direttamente sulla pelle" },
@@ -185,7 +185,7 @@
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Contatto superficiale con oggetti freddi" },
-          { "option": "B", "value": "Liquidi troppo caldi o sostanze caustiche" },
+          { "option": "B", "value": "Ingestione liquidi troppo caldi o sostanze caustiche" },
           { "option": "C", "value": "Esposizione solare moderata" },
           { "option": "D", "value": "Utilizzo di ghiaccio secco" }
         ]
@@ -215,7 +215,7 @@
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Continuare l’intervento senza precauzioni" },
-          { "option": "B", "value": "Togliere la vittima dalla fonte di corrente" },
+          { "option": "B", "value": "Staccare la corrente, poi la vittima dalla presa" },
           { "option": "C", "value": "Applicare ghiaccio sulla zona interessata" },
           { "option": "D", "value": "Somministrare acqua per via endovenosa" }
         ]
@@ -251,7 +251,7 @@
         ]
       },
       {
-        "text": "Il congelamento si verifica quando le temperature scendono sotto:",
+        "text": "Il congelamento con ustioni da freddo si verifica quando le temperature scendono sotto:",
         "correct_answer": "C",
         "answers": [
           { "option": "A", "value": "0° C" },
@@ -305,7 +305,7 @@
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Movimenti convulsivi incontrollati" },
-          { "option": "B", "value": "Interruzione momentanea e benignamente legata a fattori ambientali o psicologici" },
+          { "option": "B", "value": "Interruzione momentanea e benigna legata a fattori ambientali o psicologici" },
           { "option": "C", "value": "Crisi scuotimento con movimenti senza scopo" },
           { "option": "D", "value": "Posizione laterale di sicurezza necessaria" }
         ]
@@ -346,8 +346,8 @@
         "answers": [
           { "option": "A", "value": "Gialla" },
           { "option": "B", "value": "Verde" },
-          { "option": "C", "value": "Rossa estrema" },
-          { "option": "D", "value": "Blu" }
+          { "option": "C", "value": "Rosso Avanzato" },
+          { "option": "D", "value": "Bianco" }
         ]
       },
       {
@@ -411,11 +411,11 @@
         ]
       },
       {
-        "text": "Il laccio emostatico e il cotone idrofilo sono indicati per:",
+        "text": "Il cotone idrofilo è indicato per:",
         "correct_answer": "B",
         "answers": [
           { "option": "A", "value": "Arrestare l’emorragia" },
-          { "option": "B", "value": "Non essere utilizzati, perché “non servono a niente”" },
+          { "option": "B", "value": "Togliere eccesso di disinfettante" },
           { "option": "C", "value": "Disinfettare la ferita" },
           { "option": "D", "value": "Stabilizzare una frattura" }
         ]
@@ -424,7 +424,7 @@
         "text": "In caso di frattura, quale azione è sconsigliata?",
         "correct_answer": "B",
         "answers": [
-          { "option": "A", "value": "Immobilizzare la zona" },
+          { "option": "A", "value": "Chiamare soccorsi per un trasporto sicuro" },
           { "option": "B", "value": "Ridurre forzatamente una lussazione" },
           { "option": "C", "value": "Applicare ghiaccio per ridurre gonfiore" },
           { "option": "D", "value": "Evitare movimenti inutili" }
