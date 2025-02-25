@@ -109,7 +109,7 @@
 
     // Load quiz questions from /domande.json on page load
     window.onload = function() {
-      fetch('/domande.json')
+      fetch('/TestPrimoSoccorso/domande.json')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
