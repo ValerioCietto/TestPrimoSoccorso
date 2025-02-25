@@ -1,0 +1,505 @@
+{
+    "questions": [
+      {
+        "text": "Qual è la prima priorità in una situazione di emergenza secondo gli appunti?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Soccorrere la vittima" },
+          { "option": "B", "value": "Allertare i soccorsi" },
+          { "option": "C", "value": "Proteggere se stessi" },
+          { "option": "D", "value": "Intervenire immediatamente" }
+        ]
+      },
+      {
+        "text": "In ordine di priorità, quale tra queste azioni viene eseguita per ultima?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Proteggere" },
+          { "option": "B", "value": "Allertare" },
+          { "option": "C", "value": "Soccorrere" },
+          { "option": "D", "value": "Mettere in sicurezza la scena" }
+        ]
+      },
+      {
+        "text": "Nel trattamento delle ustioni, quale procedura è fondamentale per proteggere il soccorritore?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Rimuovere i vestiti immediatamente" },
+          { "option": "B", "value": "Utilizzare guanti e protezioni" },
+          { "option": "C", "value": "Applicare ghiaccio direttamente sulla pelle" },
+          { "option": "D", "value": "Massaggiare la zona ustionata" }
+        ]
+      },
+      {
+        "text": "Quale segno caratterizza un’ustione di primo grado?",
+        "correct_answer": "A",
+        "answers": [
+          { "option": "A", "value": "Eritema che si risolve spontaneamente" },
+          { "option": "B", "value": "Presenza di bolle dolorose" },
+          { "option": "C", "value": "Carbonizzazione dei tessuti" },
+          { "option": "D", "value": "Assenza di dolore" }
+        ]
+      },
+      {
+        "text": "Le ustioni di secondo grado sono caratterizzate da:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Eritema lieve" },
+          { "option": "B", "value": "Bolle e danno alle parti sottostanti" },
+          { "option": "C", "value": "Carbonizzazione" },
+          { "option": "D", "value": "Assenza di dolore per via della distruzione dei nervi" }
+        ]
+      },
+      {
+        "text": "Quale descrizione corrisponde a un’ustione di terzo grado?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Eritema superficiale" },
+          { "option": "B", "value": "Bolle multiple dolorose" },
+          { "option": "C", "value": "Carbonizzazione con distruzione dei nervi" },
+          { "option": "D", "value": "Rossore che si riprende da solo" }
+        ]
+      },
+      {
+        "text": "Se è presente un grado elevato di ustione, cosa implica secondo gli appunti?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Solo il danno del grado superiore" },
+          { "option": "B", "value": "La presenza simultanea di tutti i gradi inferiori" },
+          { "option": "C", "value": "Una guarigione più rapida" },
+          { "option": "D", "value": "La necessità di rimuovere immediatamente i vestiti" }
+        ]
+      },
+      {
+        "text": "La gravità delle ustioni dipende da:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Solamente dalla profondità" },
+          { "option": "B", "value": "Dall’estensione e dalla quantità di area interessata" },
+          { "option": "C", "value": "Solo dal tipo di sostanza che ha causato l’ustione" },
+          { "option": "D", "value": "Dalla temperatura del liquido" }
+        ]
+      },
+      {
+        "text": "Quale situazione può portare a una grossa perdita di liquidi con rischio embolico?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Ustione lieve da sole" },
+          { "option": "B", "value": "Ustione estesa con bolle e danno sottocutaneo" },
+          { "option": "C", "value": "Ustione superficiale da freddo" },
+          { "option": "D", "value": "Ustione solare" }
+        ]
+      },
+      {
+        "text": "Una vasta area ustionata può comportare il rischio di:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Infezione locale soltanto" },
+          { "option": "B", "value": "Insufficienza renale e problemi circolatori" },
+          { "option": "C", "value": "Un rapido recupero" },
+          { "option": "D", "value": "Aumento della sensibilità cutanea" }
+        ]
+      },
+      {
+        "text": "Un ustione al 1° grado che copre l’80% del corpo è considerata:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Minore, se localizzata" },
+          { "option": "B", "value": "Pericolosa come una ustione di 3° grado localizzata sotto al 9%" },
+          { "option": "C", "value": "Inutile da trattare" },
+          { "option": "D", "value": "Non rilevante in termini di rischio" }
+        ]
+      },
+      {
+        "text": "Le ustioni possono risultare mortali anche dopo:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "24 ore" },
+          { "option": "B", "value": "3 giorni" },
+          { "option": "C", "value": "6 mesi" },
+          { "option": "D", "value": "1 anno" }
+        ]
+      },
+      {
+        "text": "Qual è la raccomandazione principale per il trattamento immediato delle ustioni?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Applicare ghiaccio diretto" },
+          { "option": "B", "value": "Usare acqua per raffreddare la zona" },
+          { "option": "C", "value": "Rimuovere i vestiti bruciati immediatamente" },
+          { "option": "D", "value": "Applicare una pomata antibiotica" }
+        ]
+      },
+      {
+        "text": "Nel trattamento delle ustioni, cosa NON è consigliato?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Buttare acqua sui vestiti" },
+          { "option": "B", "value": "Rimuovere i vestiti autonomamente" },
+          { "option": "C", "value": "Lasciare la gestione ai soccorritori" },
+          { "option": "D", "value": "Utilizzare acqua per abbassare la temperatura" }
+        ]
+      },
+      {
+        "text": "Per le ustioni chimiche da materiale di pulizia, è importante:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Applicare subito ghiaccio secco" },
+          { "option": "B", "value": "Lavare abbondantemente con acqua" },
+          { "option": "C", "value": "Rimuovere i vestiti contaminati e attendere il personale sanitario" },
+          { "option": "D", "value": "Applicare disinfettante direttamente sulla sostanza" }
+        ]
+      },
+      {
+        "text": "Nel trattamento delle verruche con ustioni da freddo, quale sostanza viene utilizzata?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Ghiaccio spray" },
+          { "option": "B", "value": "Ghiaccio secco" },
+          { "option": "C", "value": "Azoto liquido" },
+          { "option": "D", "value": "Ghiaccio diretto sulla pelle" }
+        ]
+      },
+      {
+        "text": "L’uso improprio di quale prodotto è sconsigliato per il trattamento delle ustioni da freddo?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Azoto liquido" },
+          { "option": "B", "value": "Ghiaccio spray" },
+          { "option": "C", "value": "Ghiaccio secco su un vestito" },
+          { "option": "D", "value": "Applicazione di acqua fredda" }
+        ]
+      },
+      {
+        "text": "Il ghiaccio secco, nel trattamento delle ustioni da freddo, deve essere:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Applicato direttamente sulla pelle" },
+          { "option": "B", "value": "Usato costantemente a contatto con la pelle" },
+          { "option": "C", "value": "Messo sul vestito" },
+          { "option": "D", "value": "Combinato con acqua calda" }
+        ]
+      },
+      {
+        "text": "Le ustioni interne possono derivare da:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Contatto superficiale con oggetti freddi" },
+          { "option": "B", "value": "Liquidi troppo caldi o sostanze caustiche" },
+          { "option": "C", "value": "Esposizione solare moderata" },
+          { "option": "D", "value": "Utilizzo di ghiaccio secco" }
+        ]
+      },
+      {
+        "text": "L’ingestione di detersivo o candeggina può causare:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Una guarigione completa senza conseguenze" },
+          { "option": "B", "value": "Tessuto cicatriziale, pur con possibile guarigione" },
+          { "option": "C", "value": "Un’ustione di terzo grado" },
+          { "option": "D", "value": "Nessun danno, se ingerito in piccole quantità" }
+        ]
+      },
+      {
+        "text": "Quale tra i seguenti effetti non è associato all’ingestione di sostanze caustiche?",
+        "correct_answer": "D",
+        "answers": [
+          { "option": "A", "value": "Danno immediato" },
+          { "option": "B", "value": "Danno al ritorno (da deglutizione e rigurgito)" },
+          { "option": "C", "value": "Forme degenerative come tumori" },
+          { "option": "D", "value": "Guarigione senza alterazioni tissutali" }
+        ]
+      },
+      {
+        "text": "Quale misura deve essere adottata in caso di elettrocuzione?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Continuare l’intervento senza precauzioni" },
+          { "option": "B", "value": "Togliere la vittima dalla fonte di corrente" },
+          { "option": "C", "value": "Applicare ghiaccio sulla zona interessata" },
+          { "option": "D", "value": "Somministrare acqua per via endovenosa" }
+        ]
+      },
+      {
+        "text": "Le conseguenze di un’elettrocuzione includono:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Solo contrazioni muscolari" },
+          { "option": "B", "value": "Aritmie e possibili traumi" },
+          { "option": "C", "value": "Soltanto ustioni solari" },
+          { "option": "D", "value": "Unicamente crampi muscolari" }
+        ]
+      },
+      {
+        "text": "Le ustioni solari sono generalmente:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Le più gravi" },
+          { "option": "B", "value": "Invariabilmente di terzo grado" },
+          { "option": "C", "value": "Le più innocue, seppur a volte di secondo grado" },
+          { "option": "D", "value": "Associate a perdite ematiche" }
+        ]
+      },
+      {
+        "text": "Le ustioni da neve, tipiche delle zone montane, sono dovute principalmente a:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Eccesso di calore" },
+          { "option": "B", "value": "Aria rarefatta e vasocostrizione" },
+          { "option": "C", "value": "Esposizione a sostanze caustiche" },
+          { "option": "D", "value": "Contatto con superfici bollenti" }
+        ]
+      },
+      {
+        "text": "Il congelamento si verifica quando le temperature scendono sotto:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "0° C" },
+          { "option": "B", "value": "+10° C" },
+          { "option": "C", "value": "-10° C o meno" },
+          { "option": "D", "value": "+20° C" }
+        ]
+      },
+      {
+        "text": "L’insolazione comporta quale meccanismo fisiologico?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Riscaldamento del cervello" },
+          { "option": "B", "value": "Perdita di calore tramite febbre" },
+          { "option": "C", "value": "Raffreddamento immediato" },
+          { "option": "D", "value": "Vasodilatazione incontrollata" }
+        ]
+      },
+      {
+        "text": "Il colpo di calore è caratterizzato da:",
+        "correct_answer": "A",
+        "answers": [
+          { "option": "A", "value": "Accumulo eccessivo di calore nel cervello" },
+          { "option": "B", "value": "Raffreddamento generale del corpo" },
+          { "option": "C", "value": "Ipotermia locale" },
+          { "option": "D", "value": "Soltanto ustioni di primo grado" }
+        ]
+      },
+      {
+        "text": "In caso di crisi epilettica, quale posizione è consigliata per la vittima?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Supina con la testa sollevata" },
+          { "option": "B", "value": "Posizione laterale di sicurezza" },
+          { "option": "C", "value": "In piedi, per facilitare la respirazione" },
+          { "option": "D", "value": "Sdraiata con le gambe piegate" }
+        ]
+      },
+      {
+        "text": "Il massaggio cardiaco deve essere eseguito:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Immediatamente, senza aspettare indicazioni" },
+          { "option": "B", "value": "Solo se indicato dal 112" },
+          { "option": "C", "value": "In ogni situazione di emergenza" },
+          { "option": "D", "value": "Dopo aver rimosso eventuali costole incrinate" }
+        ]
+      },
+      {
+        "text": "Nel distinguere uno svenimento da una crisi epilettica, quale aspetto è tipico dello svenimento?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Movimenti convulsivi incontrollati" },
+          { "option": "B", "value": "Interruzione momentanea e benignamente legata a fattori ambientali o psicologici" },
+          { "option": "C", "value": "Crisi scuotimento con movimenti senza scopo" },
+          { "option": "D", "value": "Posizione laterale di sicurezza necessaria" }
+        ]
+      },
+      {
+        "text": "Il dolore toracico costante durante lo sforzo può essere indice di:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Gastrite" },
+          { "option": "B", "value": "Dolore ischemico legato a un possibile infarto" },
+          { "option": "C", "value": "Svenimento" },
+          { "option": "D", "value": "Crisi epilettica" }
+        ]
+      },
+      {
+        "text": "Un dolore che non cambia al variare della pressione è indicativo di:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Dolore muscolare" },
+          { "option": "B", "value": "Dolore ischemico" },
+          { "option": "C", "value": "Dolore da gastrite" },
+          { "option": "D", "value": "Dolore psicogeno" }
+        ]
+      },
+      {
+        "text": "In una crisi ipoglicemica, un soggetto diabetico può evolvere rapidamente verso:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Uno stato di sonno leggero" },
+          { "option": "B", "value": "Un coma ipoglicemico" },
+          { "option": "C", "value": "Un infarto immediato" },
+          { "option": "D", "value": "Una crisi epilettica" }
+        ]
+      },
+      {
+        "text": "L’arresto cardiaco è classificato come un’emergenza:",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Gialla" },
+          { "option": "B", "value": "Verde" },
+          { "option": "C", "value": "Rossa estrema" },
+          { "option": "D", "value": "Blu" }
+        ]
+      },
+      {
+        "text": "Cosa è fondamentale fare in caso di arresto cardiaco secondo gli appunti?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Abbandonare la vittima per cercare aiuto" },
+          { "option": "B", "value": "Chiamare il 112 e non abbandonare la persona" },
+          { "option": "C", "value": "Tentare di ridurre una frattura" },
+          { "option": "D", "value": "Somministrare disinfettante" }
+        ]
+      },
+      {
+        "text": "Quale azione non è tra quelle consigliate nel soccorso di un infortunato?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Fermare eventuali interventi non coordinati" },
+          { "option": "B", "value": "Chiamare il 112 per indicazioni" },
+          { "option": "C", "value": "Allontanarsi per sicurezza" },
+          { "option": "D", "value": "Stare vicino alla persona infortunata" }
+        ]
+      },
+      {
+        "text": "In un incidente stradale, la priorità è:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Prestare subito soccorso diretto" },
+          { "option": "B", "value": "Mettere in sicurezza la strada per deviare il traffico" },
+          { "option": "C", "value": "Spostare la vittima immediatamente" },
+          { "option": "D", "value": "Effettuare manovre di primo soccorso non coordinate" }
+        ]
+      },
+      {
+        "text": "Per evitare il contatto con materiale biologico durante il soccorso, è essenziale:",
+        "correct_answer": "A",
+        "answers": [
+          { "option": "A", "value": "Utilizzare guanti protettivi" },
+          { "option": "B", "value": "Applicare immediatamente disinfettante sulla pelle" },
+          { "option": "C", "value": "Rimuovere i vestiti contaminati" },
+          { "option": "D", "value": "Coprire la ferita con ghiaccio" }
+        ]
+      },
+      {
+        "text": "Quale disinfettante è raccomandato per trattare ferite secondo gli appunti?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Alcool isopropilico" },
+          { "option": "B", "value": "Acqua ossigenata" },
+          { "option": "C", "value": "Betadine o iodopovidone" },
+          { "option": "D", "value": "Soluzione salina semplice" }
+        ]
+      },
+      {
+        "text": "Per evitare ulteriori infezioni in una ferita, dopo aver disinfettato, è opportuno utilizzare:",
+        "correct_answer": "A",
+        "answers": [
+          { "option": "A", "value": "Garze e cerotti come barriera" },
+          { "option": "B", "value": "Solo cotone idrofilo" },
+          { "option": "C", "value": "Laccio emostatico" },
+          { "option": "D", "value": "Ghiaccio diretto" }
+        ]
+      },
+      {
+        "text": "Il laccio emostatico e il cotone idrofilo sono indicati per:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Arrestare l’emorragia" },
+          { "option": "B", "value": "Non essere utilizzati, perché “non servono a niente”" },
+          { "option": "C", "value": "Disinfettare la ferita" },
+          { "option": "D", "value": "Stabilizzare una frattura" }
+        ]
+      },
+      {
+        "text": "In caso di frattura, quale azione è sconsigliata?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Immobilizzare la zona" },
+          { "option": "B", "value": "Ridurre forzatamente una lussazione" },
+          { "option": "C", "value": "Applicare ghiaccio per ridurre gonfiore" },
+          { "option": "D", "value": "Evitare movimenti inutili" }
+        ]
+      },
+      {
+        "text": "Qual è la differenza principale tra un’emorragia arteriosa e una venosa?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "L’arteriosa è più lenta" },
+          { "option": "B", "value": "L’arteriosa produce schizzi intermittenti" },
+          { "option": "C", "value": "La venosa è sempre dolorosa" },
+          { "option": "D", "value": "La venosa non richiede compressione" }
+        ]
+      },
+      {
+        "text": "Le tipologie di ferite vengono classificate in base a:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Colore e temperatura della pelle" },
+          { "option": "B", "value": "Profondità e causa (punta, taglio, lacerazione, abrasione)" },
+          { "option": "C", "value": "Solo la causa dell’infortunio" },
+          { "option": "D", "value": "La localizzazione anatomica" }
+        ]
+      },
+      {
+        "text": "Quale complicanza grave può insorgere da una ferita non adeguatamente disinfettata?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Ipotermia" },
+          { "option": "B", "value": "Tetano" },
+          { "option": "C", "value": "Svenimento" },
+          { "option": "D", "value": "Crisi ipoglicemica" }
+        ]
+      },
+      {
+        "text": "Le schede di sicurezza sono fondamentali per:",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Gestire emergenze psicologiche" },
+          { "option": "B", "value": "Fornire indicazioni su materiali pericolosi" },
+          { "option": "C", "value": "Sostituire le procedure di primo soccorso" },
+          { "option": "D", "value": "Stabilire il protocollo di intervento in caso di frattura" }
+        ]
+      },
+      {
+        "text": "In caso di trauma con esposizione a liquidi infiammabili, cosa è consigliato?",
+        "correct_answer": "C",
+        "answers": [
+          { "option": "A", "value": "Spostare subito la vittima senza precauzioni" },
+          { "option": "B", "value": "Rimuovere la persona solo se si verifica una perdita di liquidi" },
+          { "option": "C", "value": "Mettere in sicurezza l’area per evitare ulteriori danni e incendi" },
+          { "option": "D", "value": "Applicare disinfettante sulla zona" }
+        ]
+      },
+      {
+        "text": "Per la gestione delle emergenze, quale elemento dell’equipaggiamento è considerato fondamentale?",
+        "correct_answer": "B",
+        "answers": [
+          { "option": "A", "value": "Ghiaccio secco" },
+          { "option": "B", "value": "Disinfettante, garze, cerotti e guanti" },
+          { "option": "C", "value": "Cotone idrofilo" },
+          { "option": "D", "value": "Laccio emostatico" }
+        ]
+      },
+      {
+        "text": "Secondo gli appunti, l’intervento del soccorritore è legalmente protetto se:",
+        "correct_answer": "A",
+        "answers": [
+          { "option": "A", "value": "Si agisce in stato di necessità per evitare danni irreversibili" },
+          { "option": "B", "value": "Si cerca di risolvere ogni problema senza chiamare i soccorsi" },
+          { "option": "C", "value": "Si utilizzano metodi non convenzionali senza indicazioni" },
+          { "option": "D", "value": "Si abbandona la scena dopo aver chiamato il 112" }
+        ]
+      }
+    ]
+  }
+  
