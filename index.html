@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Multiple Choice Quiz</title>
+  <title>Multiple Choice Quiz with Dynamic Health Bar</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
       background-color: #f2f2f2;
     }
+    /* Sticky Health Bar */
     #health-bar-wrapper {
       max-width: 800px;
       margin: auto;
       margin-bottom: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
     }
     #health-bar-container {
       background: #ddd;
@@ -70,7 +77,7 @@
   </style>
 </head>
 <body>
-  <!-- Health Bar Section -->
+  <!-- Sticky Health Bar Section -->
   <div id="health-bar-wrapper">
     <div id="health-bar-container">
       <div id="health-bar"></div>
@@ -87,8 +94,24 @@
 
   <script>
     let quizData = null;
+    let currentHealth = 50; // start at 50%
+    const bonusAdded = []; // Track bonus per question
 
-    // Fisher-Yates shuffle algorithm
+    // Update the health bar UI based on currentHealth
+    function updateHealthUI() {
+      const healthBar = document.getElementById("health-bar");
+      healthBar.style.width = currentHealth + "%";
+      healthBar.style.backgroundColor = (currentHealth >= 80) ? "green" : "yellow";
+      document.getElementById("health-bar-text").textContent = "Health: " + currentHealth + "%";
+    }
+
+    // Decrease health by 1% every second
+    setInterval(() => {
+      currentHealth = Math.max(0, currentHealth - 1);
+      updateHealthUI();
+    }, 1000);
+
+    // Fisher-Yates shuffle algorithm to randomize questions
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -97,12 +120,15 @@
       return array;
     }
 
-    // Function to generate the quiz from loaded JSON data, selecting 10 random questions
+    // Generate the quiz from loaded JSON data, selecting 10 random questions
     function generateQuiz(data) {
-      // Shuffle and select 10 questions randomly
       const allQuestions = data.questions.slice();
       const selectedQuestions = shuffle(allQuestions).slice(0, 10);
       quizData = selectedQuestions;
+      // Initialize bonus tracking for each question
+      for (let i = 0; i < selectedQuestions.length; i++) {
+        bonusAdded[i] = false;
+      }
 
       const quizContainer = document.getElementById("quiz-container");
       quizContainer.innerHTML = ""; // Clear loading message
@@ -112,9 +138,9 @@
         const questionDiv = document.createElement("div");
         questionDiv.className = "question";
 
-        // Add question text
+        // Add question text (without "Question X:" prefix)
         const questionTitle = document.createElement("h3");
-        questionTitle.textContent = `Question ${index + 1}: ${question.text}`;
+        questionTitle.textContent = question.text;
         questionDiv.appendChild(questionTitle);
 
         // Create answer options
@@ -126,43 +152,38 @@
             <input type="radio" name="question${index}" value="${answer.option}">
             ${answer.option}. ${answer.value}
           `;
+          // Add change listener to update health bar on selection
+          label.querySelector('input').addEventListener("change", function() {
+            // Check if the chosen answer is correct
+            if (this.value === question.correct_answer && !bonusAdded[index]) {
+              currentHealth = Math.min(100, currentHealth + 20);
+              bonusAdded[index] = true;
+            } else if (this.value !== question.correct_answer && bonusAdded[index]) {
+              // If user changes from a correct answer to an incorrect one, remove the bonus.
+              currentHealth = Math.max(0, currentHealth - 20);
+              bonusAdded[index] = false;
+            }
+            updateHealthUI();
+          });
           answersDiv.appendChild(label);
         });
         questionDiv.appendChild(answersDiv);
         quizContainer.appendChild(questionDiv);
         quizContainer.appendChild(document.createElement("hr"));
       });
+      
+      updateHealthUI();
     }
 
-    // Function to evaluate the quiz and update the health bar
+    // Evaluate the quiz and display the final score
     function evaluateQuiz() {
       let score = 0;
-      let health = 50; // initial health percentage
       quizData.forEach((question, index) => {
         const selected = document.querySelector(`input[name="question${index}"]:checked`);
-        if (selected) {
-          if (selected.value === question.correct_answer) {
-            score++;
-            health += 10;
-          } else {
-            health -= 10;
-          }
-        } else {
-          // If no answer is selected, treat it as incorrect.
-          health -= 10;
+        if (selected && selected.value === question.correct_answer) {
+          score++;
         }
       });
-      // Cap health between 0 and 100
-      if (health > 100) health = 100;
-      if (health < 0) health = 0;
-
-      // Update health bar UI
-      const healthBar = document.getElementById("health-bar");
-      healthBar.style.width = health + "%";
-      healthBar.style.backgroundColor = (health >= 80) ? "green" : "yellow";
-      document.getElementById("health-bar-text").textContent = "Health: " + health + "%";
-
-      // Display score result
       const resultDiv = document.getElementById("result");
       resultDiv.innerHTML = `<h2>Your Score: ${score} / ${quizData.length}</h2>`;
     }
