@@ -88,14 +88,15 @@
   <!-- Quiz Section -->
   <div id="quiz-container">Loading quiz...</div>
   <div style="text-align:center;">
-    <button id="submit-btn">Submit Answers</button>
+    <button id="submit-btn">Verifica risposte</button>
   </div>
   <div id="result"></div>
 
   <script>
     let quizData = null;
-    let currentHealth = 50; // start at 50%
+    let currentHealth = 50; // initial health is 50%
     const bonusAdded = []; // Track bonus per question
+    let healthInterval = null;
 
     // Update the health bar UI based on currentHealth
     function updateHealthUI() {
@@ -106,10 +107,12 @@
     }
 
     // Decrease health by 1% every second
-    setInterval(() => {
-      currentHealth = Math.max(0, currentHealth - 1);
-      updateHealthUI();
-    }, 1000);
+    function startHealthCountdown() {
+      healthInterval = setInterval(() => {
+        currentHealth = Math.max(0, currentHealth - 1);
+        updateHealthUI();
+      }, 1000);
+    }
 
     // Fisher-Yates shuffle algorithm to randomize questions
     function shuffle(array) {
@@ -122,6 +125,7 @@
 
     // Generate the quiz from loaded JSON data, selecting 10 random questions
     function generateQuiz(data) {
+      // Shuffle and select 10 questions randomly
       const allQuestions = data.questions.slice();
       const selectedQuestions = shuffle(allQuestions).slice(0, 10);
       quizData = selectedQuestions;
@@ -154,12 +158,11 @@
           `;
           // Add change listener to update health bar on selection
           label.querySelector('input').addEventListener("change", function() {
-            // Check if the chosen answer is correct
             if (this.value === question.correct_answer && !bonusAdded[index]) {
               currentHealth = Math.min(100, currentHealth + 20);
               bonusAdded[index] = true;
             } else if (this.value !== question.correct_answer && bonusAdded[index]) {
-              // If user changes from a correct answer to an incorrect one, remove the bonus.
+              // If the user changes from a correct answer to an incorrect one, remove the bonus.
               currentHealth = Math.max(0, currentHealth - 20);
               bonusAdded[index] = false;
             }
@@ -173,10 +176,29 @@
       });
       
       updateHealthUI();
+      startHealthCountdown();
     }
 
-    // Evaluate the quiz and display the final score
+    // Determine prognosi based on health percentage
+    function getPrognosi(health) {
+      if (health < 20) {
+        return "Fatalità evitabile";
+      } else if (health < 40) {
+        return "Recupero difficile";
+      } else if (health < 60) {
+        return "Possibilità di recupero in 30 giorni";
+      } else if (health < 80) {
+        return "Recupero in pochi giorni";
+      } else {
+        return "Recupero completo!";
+      }
+    }
+
+    // Evaluate the quiz and display the final score, then stop the countdown
     function evaluateQuiz() {
+      // Stop the health countdown
+      clearInterval(healthInterval);
+      
       let score = 0;
       quizData.forEach((question, index) => {
         const selected = document.querySelector(`input[name="question${index}"]:checked`);
@@ -184,11 +206,17 @@
           score++;
         }
       });
+      
+      const prognosi = getPrognosi(currentHealth);
       const resultDiv = document.getElementById("result");
-      resultDiv.innerHTML = `<h2>Your Score: ${score} / ${quizData.length}</h2>`;
+      resultDiv.innerHTML = `
+        <h2>Domande corrette: ${score} / ${quizData.length}</h2>
+        <h3>Salute rimanente: ${currentHealth}%</h3>
+        <h3>Prognosi: ${prognosi}</h3>
+      `;
     }
 
-    // Event listener for submit button
+    // Event listener for "Verifica risposte" button
     document.getElementById("submit-btn").addEventListener("click", evaluateQuiz);
 
     // Load quiz questions from /TestPrimoSoccorso/domande.json on page load
