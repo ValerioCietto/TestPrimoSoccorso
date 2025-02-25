@@ -9,6 +9,27 @@
       margin: 20px;
       background-color: #f2f2f2;
     }
+    #health-bar-wrapper {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    #health-bar-container {
+      background: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 20px;
+    }
+    #health-bar {
+      height: 100%;
+      width: 50%; /* initial health is 50% */
+      background-color: yellow;
+      transition: width 0.3s, background-color 0.3s;
+    }
+    #health-bar-text {
+      text-align: center;
+      margin-top: 5px;
+    }
     #quiz-container {
       background: #fff;
       padding: 20px;
@@ -49,6 +70,15 @@
   </style>
 </head>
 <body>
+  <!-- Health Bar Section -->
+  <div id="health-bar-wrapper">
+    <div id="health-bar-container">
+      <div id="health-bar"></div>
+    </div>
+    <p id="health-bar-text">Health: 50%</p>
+  </div>
+
+  <!-- Quiz Section -->
   <div id="quiz-container">Loading quiz...</div>
   <div style="text-align:center;">
     <button id="submit-btn">Submit Answers</button>
@@ -104,15 +134,35 @@
       });
     }
 
-    // Function to evaluate the quiz
+    // Function to evaluate the quiz and update the health bar
     function evaluateQuiz() {
       let score = 0;
+      let health = 50; // initial health percentage
       quizData.forEach((question, index) => {
         const selected = document.querySelector(`input[name="question${index}"]:checked`);
-        if (selected && selected.value === question.correct_answer) {
-          score++;
+        if (selected) {
+          if (selected.value === question.correct_answer) {
+            score++;
+            health += 10;
+          } else {
+            health -= 10;
+          }
+        } else {
+          // If no answer is selected, treat it as incorrect.
+          health -= 10;
         }
       });
+      // Cap health between 0 and 100
+      if (health > 100) health = 100;
+      if (health < 0) health = 0;
+
+      // Update health bar UI
+      const healthBar = document.getElementById("health-bar");
+      healthBar.style.width = health + "%";
+      healthBar.style.backgroundColor = (health >= 80) ? "green" : "yellow";
+      document.getElementById("health-bar-text").textContent = "Health: " + health + "%";
+
+      // Display score result
       const resultDiv = document.getElementById("result");
       resultDiv.innerHTML = `<h2>Your Score: ${score} / ${quizData.length}</h2>`;
     }
